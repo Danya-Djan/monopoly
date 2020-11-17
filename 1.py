@@ -1,6 +1,8 @@
 import random
 p1 = []
 p2 = []
+d1 = []
+d2 = []
 t = int
 def rand(t): #функция выбора рандомного числа
 	a = random.randint(1,6)
@@ -47,10 +49,36 @@ while s1 > 0 and s2 > 0:
 				s1 = s1 - prises[k1]
 				print("You budget after purchase:", s1)
 				print("Your collection:", p1, "\n")
+
+
+
+
+
+				if s1 > 50: 
+					print("Your budget is", s1, ". Do you want to build a house on this street(you should pay 50 for one house)?(y/n)")
+					c1 = input()
+					if c1 == 'y':
+						print("How many houses do you want?")
+						y1 = int(input())
+						if s1 > 1 * 50:
+							s1 = s1 - y1 * 50
+							d1.append(y1)
+					else:
+						d1.append(0)
+					print("Your budget after building is", s1)
+					print("Your collection", p1)
+					print("Homes on your streets:", d1, "\n")
+
+
+
+
+
+
 			else:
-				print("Your collection:", p1, "\n")
+				print("Your collection:", p1)
+				print("Homes on your streets:", d1, "\n")
 		else:
-			print("You haven't got", prises[k1], "for buying this streets, because you have only", s1)
+			print("You haven't got", prises[k1], "for buying this streets, because you have only", s1, "\n")
 
 
 
@@ -115,10 +143,38 @@ while s1 > 0 and s2 > 0:
 				s2 = s2 - prises[k2]
 				print("You budget after purchase:", s2)
 				print("Your collection", p2, "\n")
+
+
+
+
+
+				if s2 > 50: 
+					print("Your budget is", s2, ". Do you want to build a house on this street(you should pay 50 for one house)?(y/n)")
+					c2 = input()
+					if c2 == 'y':
+						print("How many houses do you want?")
+						y2 = int(input())
+						if s2 > y2 * 50:
+							s2 = s2 - y2 * 50
+							d2.append(y2)
+					else:
+						d2.append(0)
+					print("Your budget after building is", s2)
+					print("Your collection", p2)
+					print("Homes on your streets:", d2, "\n")
+
+
+
+
+
+
+
+
 			else:
-				print("Your collection:", p2, "\n")
+				print("Your collection:", p2)
+				print("Homes on your streets:", d2, "\n")
 		else:
-			print("You haven't got", prises[k2], "for buying this streets, because you have only", s2)
+			print("You haven't got", prises[k2], "for buying this streets, because you have only", s2, "\n")
 
 
 
