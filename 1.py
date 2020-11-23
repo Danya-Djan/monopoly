@@ -19,7 +19,7 @@ k2 = 0 #координата второго игрока
 streets = ['Start', 'Mediterranean Avenue', 'Baltic Avenue', 'Income Tax', 'Reading Railroad', 'Oriental Avenue', 'Vermont Avenue', 'Connecticut Avenue', 'Visiting Jail', 'St. Charles Place', 'Electric Company', 'States Avenue', 'Virginia Avenuev', 'Pennsylvania Railroad', 'St. James Place', 'Tennessee Avenue', 'New York Avenue', 'Free Parking', 'Kentucky Avenue', 'Indiana Avenue', 'Illinois Avenue', 'B & O Railroad', 'Atlantic Avenue', 'Ventnor Avenue', 'Water Works', 'Marvin Gardens', 'Go To Jail', 'Pacific Avenue', 'North Carolina Avenue', 'Pennsylvania Avenue', 'Short Line', 'Park Place', 'Luxury Tax', 'Boardwalk']
 prises = [0, 60, 60, 200, 200, 100, 100, 120, 0, 140, 150, 140, 160, 200, 180, 180, 200, 0, 200, 220, 240, 200, 260, 260, 250, 280, 0, 300, 300, 320, 200, 350, 100, 400]
 #print(len(streets), len(prises))
-print("Welcome ot Monopoly, let's start!")
+print("Welcome ot Monopoly, let's start!\n")
 while s1 > 0 and s2 > 0:
 
 
@@ -88,28 +88,172 @@ while s1 > 0 and s2 > 0:
 		print("You passed the start field, get 200")
 		s1 = s1 + 200
 		print("You budget is", s1, "\n")
+
+
+
+		print("You have:", streets, "and on this streets you have:", d1, "buildings")
+		print("Do you want to build some house on your streets?")
+		c1 = input()
+		if c1 == 'y':
+			print("On what streets you wan to build?")
+			a = int(input())
+			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+			a1 = int(input())
+			if s1 > 50 * a1:
+				print("Okey, now on the", streets[a], "you have", a1, "buildings\n")
+				d[a] = d[a] + a1
+				s1 = s1 - a * 50
+			else:
+				print("You haven't got some money for this operation\n")
+			
+
+
+
 	elif streets[k1] == 'Income Tax':
 		print("You hit the field Income Tax, pay 100")
 		s1 = s1 - 100
 		print("You budget is", s1, "\n")
+
+
+		print("You have:", streets, "and on this streets you have:", d1, "buildings")
+		print("Do you want to build some house on your streets?")
+		c1 = input()
+		if c1 == 'y':
+			print("On what streets you wan to build?")
+			a = int(input())
+			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+			a1 = int(input())
+			if s1 > 50 * a1:
+				print("Okey, now on the", streets[a], "you have", a1, "buildings\n")
+				d[a] = d[a] + a1
+				s1 = s1 - a * 50
+			else:
+				print("You haven't got some money for this operation\n")
+			
+
+
+
 	elif streets[k1] == 'Free Parking':
 		print("You are on the Free Parking", "\n")
+
+
+		print("You have:", streets, "and on this streets you have:", d1, "buildings")
+		print("Do you want to build some house on your streets?")
+		c1 = input()
+		if c1 == 'y':
+			print("On what streets you wan to build?")
+			a = int(input())
+			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+			a1 = int(input())
+			if s1 > 50 * a1:
+				print("Okey, now on the", streets[a], "you have", a1, "buildings\n")
+				d[a] = d[a] + a1
+				s1 = s1 - a * 50
+			else:
+				print("You haven't got some money for this operation\n")
+			
+
+
+
 	elif streets[k1] == 'Visiting Jail':
 		print("You are on the Jail, but only for visiting", "\n")
+
+
+		print("You have:", streets, "and on this streets you have:", d1, "buildings")
+		print("Do you want to build some house on your streets?")
+		c1 = input()
+		if c1 == 'y':
+			print("On what streets you wan to build?")
+			a = int(input())
+			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+			a1 = int(input())
+			if s1 > 50 * a1:
+				print("Okey, now on the", streets[a], "you have", a1, "buildings\n")
+				d[a] = d[a] + a1
+				s1 = s1 - a * 50
+			else:
+				print("You haven't got some money for this operation\n")
+			
+
+
+
 	elif streets[k1] == 'Go To Jail':
 		print("You are going to jail, you should pay 100")
 		s1 = s1 - 100
 		print("You budget is", s1, "\n")
 		k1 = 8
+
+
+
+
+		print("You have:", streets, "and on this streets you have:", d1, "buildings")
+		print("Do you want to build some house on your streets?")
+		c1 = input()
+		if c1 == 'y':
+			print("On what streets you wan to build?")
+			a = int(input())
+			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+			a1 = int(input())
+			if s1 > 50 * a1:
+				print("Okey, now on the", streets[a], "you have", a1, "buildings\n")
+				d[a] = d[a] + a1
+				s1 = s1 - a * 50
+			else:
+				print("You haven't got some money for this operation\n")
+			
+
+
+
 	elif streets[k1] == 'Luxury Tax':
 		print("You hit the field Luxury Tax, pay 200")
 		s1 = s1 - 200
 		print("You budget is", s1, "\n")
+
+
+
+
+
+		print("You have:", streets, "and on this streets you have:", d1, "buildings")
+		print("Do you want to build some house on your streets?")
+		c1 = input()
+		if c1 == 'y':
+			print("On what streets you wan to build?")
+			a = int(input())
+			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+			a1 = int(input())
+			if s1 > 50 * a1:
+				print("Okey, now on the", streets[a], "you have", a1, "buildings\n")
+				d[a] = d[a] + a1
+				s1 = s1 - a * 50
+			else:
+				print("You haven't got some money for this operation\n")
+			
+
+
+
 	elif streets[k1] in p2:
 		print(streets[k1], "is property of player 2. You should pay 50 to the second player")
 		s2 = s2 + 50
 		s1 = s1 - 50
 		print("You budget is", s1, "\n")
+
+
+
+		print("You have:", streets, "and on this streets you have:", d1, "buildings")
+		print("Do you want to build some house on your streets?")
+		c1 = input()
+		if c1 == 'y':
+			print("On what streets you wan to build?")
+			a = int(input())
+			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+			a1 = int(input())
+			if s1 > 50 * a1:
+				print("Okey, now on the", streets[a], "you have", a1, "buildings\n")
+				d[a] = d[a] + a1
+				s1 = s1 - a * 50
+			else:
+				print("You haven't got some money for this operation\n")
+			
 
 
 
