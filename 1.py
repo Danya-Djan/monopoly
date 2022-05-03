@@ -1,10 +1,10 @@
 import random
-p1 = []
-p2 = []
-d1 = []
-d2 = []
+p1 = [] # список улиц первого игрока
+p2 = [] # список улиц второго игрока
+d1 = [] # список домов на улицах первого игрока
+d2 = [] # список домов на улицах второго игрока
 t = int
-def rand(t): #функция выбора рандомного числа
+def rand(t): # функция выбора рандомного числа
 	a = random.randint(1,6)
 	b = random.randint(1,6)
 	c = a + b
@@ -12,10 +12,10 @@ def rand(t): #функция выбора рандомного числа
 a = int
 b = int
 c = int
-s1 = 500 #баланс первого игрока
-s2 = 500 #баланс второго игрока
-k1 = 0 #координата первого игрока
-k2 = 0 #координата второго игрока
+s1 = 500 # баланс первого игрока
+s2 = 500 # баланс второго игрока
+k1 = 0 # координата первого игрока
+k2 = 0 # координата второго игрока
 
 
 streets = ['Start', 'Mediterranean Avenue', 'Baltic Avenue', 'Income Tax', 'Reading Railroad', 'Oriental Avenue', 'Vermont Avenue', 'Connecticut Avenue', 'Visiting Jail', 'St. Charles Place', 'Electric Company', 'States Avenue', 'Virginia Avenuev', 'Pennsylvania Railroad', 'St. James Place', 'Tennessee Avenue', 'New York Avenue', 'Free Parking', 'Kentucky Avenue', 'Indiana Avenue', 'Illinois Avenue', 'B & O Railroad', 'Atlantic Avenue', 'Ventnor Avenue', 'Water Works', 'Marvin Gardens', 'Go To Jail', 'Pacific Avenue', 'North Carolina Avenue', 'Pennsylvania Avenue', 'Short Line', 'Park Place', 'Luxury Tax', 'Boardwalk']
@@ -28,7 +28,7 @@ while s1 > 0 and s2 > 0:
 
 
 
-	print("The first player throws cubes(y/n)")
+	print("\nThe first player throws cubes(y/n)")
 	c1 = input()
 	if c1 == 'y':
 		c = rand(t)
@@ -94,19 +94,20 @@ while s1 > 0 and s2 > 0:
 
 
 		print("You have:", p1, "and on this streets you have:", d1, "buildings")
-		print("Do you want to build some house on your streets?")
-		c1 = input()
-		if c1 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
-			a1 = int(input())
-			if s1 > 50 * a1:
-				d1[a] = d1[a] + a1
-				print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
-				s1 = s1 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+		if len(p1) != 0:
+			print("Do you want to biuld some houses on your streets?")
+			c1 = input()
+			if c1 == 'y':
+				print("On what streets you wan to build?")
+				a = int(input()) - 1
+				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+				a1 = int(input())
+				if s1 > 50 * a1:
+					d1[a] = d1[a] + a1
+					print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
+					s1 = s1 - a * 50
+				else:
+					print("You haven't got some money for this operation\n")
 			
 
 
@@ -118,19 +119,20 @@ while s1 > 0 and s2 > 0:
 
 
 		print("You have:", p1, "and on this streets you have:", d1, "buildings")
-		print("Do you want to build some house on your streets?")
-		c1 = input()
-		if c1 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
-			a1 = int(input())
-			if s1 > 50 * a1:
-				d1[a] = d1[a] + a1
-				print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
-				s1 = s1 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+		if len(p1) != 0:
+			print("Do you want to biuld some houses on your streets?")
+			c1 = input()
+			if c1 == 'y':
+				print("On what streets you wan to build?")
+				a = int(input()) - 1
+				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+				a1 = int(input())
+				if s1 > 50 * a1:
+					d1[a] = d1[a] + a1
+					print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
+					s1 = s1 - a * 50
+				else:
+					print("You haven't got some money for this operation\n")
 			
 
 
@@ -140,19 +142,20 @@ while s1 > 0 and s2 > 0:
 
 
 		print("You have:", p1, "and on this streets you have:", d1, "buildings")
-		print("Do you want to build some house on your streets?")
-		c1 = input()
-		if c1 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
-			a1 = int(input())
-			if s1 > 50 * a1:
-				d1[a] = d1[a] + a1
-				print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
-				s1 = s1 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+		if len(p1) != 0:
+			print("Do you want to biuld some houses on your streets?")
+			c1 = input()
+			if c1 == 'y':
+				print("On what streets you wan to build?")
+				a = int(input()) - 1
+				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+				a1 = int(input())
+				if s1 > 50 * a1:
+					d1[a] = d1[a] + a1
+					print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
+					s1 = s1 - a * 50
+				else:
+					print("You haven't got some money for this operation\n")
 			
 
 
@@ -162,19 +165,20 @@ while s1 > 0 and s2 > 0:
 
 
 		print("You have:", p1, "and on this streets you have:", d1, "buildings")
-		print("Do you want to build some house on your streets?")
-		c1 = input()
-		if c1 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
-			a1 = int(input())
-			if s1 > 50 * a1:
-				d1[a] = d1[a] + a1
-				print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
-				s1 = s1 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+		if len(p1) != 0:
+			print("Do you want to biuld some houses on your streets?")
+			c1 = input()
+			if c1 == 'y':
+				print("On what streets you wan to build?")
+				a = int(input()) - 1
+				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+				a1 = int(input())
+				if s1 > 50 * a1:
+					d1[a] = d1[a] + a1
+					print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
+					s1 = s1 - a * 50
+				else:
+					print("You haven't got some money for this operation\n")
 			
 
 
@@ -182,26 +186,42 @@ while s1 > 0 and s2 > 0:
 	elif streets[k1] == 'Go To Jail':
 		print("You are going to jail, you should pay 100")
 		s1 = s1 - 100
-		print("You budget is", s1, "\n")
 		k1 = 8
+		print("You budget is", s1, "\n")
+		print("You have:", p1, "and on this streets you have:", d1, "buildings")
+
+
+	elif streets[k1] == 'Electric Company' and streets[k1] in p2 or streets[k1] == 'Water Warks' and streets[k1] in p2:
+		print("You are on the komercial company and you should throw cubes and pay for the second player 10x sum\n")
+		print("Throw cubes:(y)\n")
+		c3 = input()
+		if c3 == 'y':
+			c = rand(t)
+			print("The numbers on the cubes:", c, "\n")
+			print("You should pay", 10 * c, "for the second player\n")
+			s1 = s1 - 10 * c
+			s2 = s2 + 10 * c
+			print("You budget is", s1, "\n")
+
 
 
 
 
 		print("You have:", p1, "and on this streets you have:", d1, "buildings")
-		print("Do you want to build some house on your streets?")
-		c1 = input()
-		if c1 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
-			a1 = int(input())
-			if s1 > 50 * a1:
-				d1[a] = d1[a] + a1
-				print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
-				s1 = s1 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+		if len(p1) != 0:
+			print("Do you want to biuld some houses on your streets?")
+			c1 = input()
+			if c1 == 'y':
+				print("On what streets you wan to build?")
+				a = int(input()) - 1
+				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+				a1 = int(input())
+				if s1 > 50 * a1:
+					d1[a] = d1[a] + a1
+					print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
+					s1 = s1 - a * 50
+				else:
+					print("You haven't got some money for this operation\n")
 			
 
 
@@ -216,19 +236,20 @@ while s1 > 0 and s2 > 0:
 
 
 		print("You have:", p1, "and on this streets you have:", d1, "buildings")
-		print("Do you want to build some house on your streets?")
-		c1 = input()
-		if c1 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
-			a1 = int(input())
-			if s1 > 50 * a1:
-				d1[a] = d1[a] + a1
-				print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
-				s1 = s1 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+		if len(p1) != 0:
+			print("Do you want to biuld some houses on your streets?")
+			c1 = input()
+			if c1 == 'y':
+				print("On what streets you wan to build?")
+				a = int(input()) - 1
+				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+				a1 = int(input())
+				if s1 > 50 * a1:
+					d1[a] = d1[a] + a1
+					print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
+					s1 = s1 - a * 50
+				else:
+					print("You haven't got some money for this operation\n")
 
 
 
@@ -241,19 +262,20 @@ while s1 > 0 and s2 > 0:
 
 
 		print("You have:", p1, "and on this streets you have:", d1, "buildings")
-		print("Do you want to build some house on your streets?")
-		c1 = input()
-		if c1 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
-			a1 = int(input())
-			if s1 > 50 * a1:
-				d1[a] = d1[a] + a1
-				print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
-				s1 = s1 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+		if len(p1) != 0:
+			print("Do you want to biuld some houses on your streets?")
+			c1 = input()
+			if c1 == 'y':
+				print("On what streets you wan to build?")
+				a = int(input()) - 1
+				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
+				a1 = int(input())
+				if s1 > 50 * a1:
+					d1[a] = d1[a] + a1
+					print("Okey, now on the", streets[a], "you have", d1[a], "buildings\n")
+					s1 = s1 - a * 50
+				else:
+					print("You haven't got some money for this operation\n")
 
 
 
@@ -263,7 +285,7 @@ while s1 > 0 and s2 > 0:
 
 
 
-	print("The second player throws cubes(y/n)")
+	print("\nThe second player throws cubes(y/n)")
 	c2 = input()
 	if c2 == 'y':
 		c = rand(t)
@@ -330,19 +352,20 @@ while s1 > 0 and s2 > 0:
 
 
 		print("You have:", p2, "and on this streets you have:", d2, "buildings")
-		print("Do you want to build some house on your streets?")
-		c2 = input()
-		if c2 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
-			a2 = int(input())
-			if s2 > 50 * a2:
-				d2[a] = d2[a] + a2
-				print("Okey, now on the", streets[a], "you have", d2[a], "buildings\n")
-				s2 = s2 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+		if len(p1) != 0:
+			print("Do you want to biuld some houses on your streets?")
+			c2 = input()
+			if c2 == 'y':
+				print("On what streets you wan to build?")
+				a = int(input()) - 1
+				print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
+				a2 = int(input())
+				if s2 > 50 * a2:
+					d2[a] = d2[a] + a2
+					print("Okey, now on the", streets[a], "you have", d2[a], "buildings\n")
+					s2 = s2 - a * 50
+				else:
+					print("You haven't got some money for this operation\n")
 
 
 	elif streets[k2] == 'Income Tax':
@@ -352,57 +375,60 @@ while s1 > 0 and s2 > 0:
 
 
 		print("You have:", p2, "and on this streets you have:", d2, "buildings")
-		print("Do you want to build some house on your streets?")
-		c2 = input()
-		if c2 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
-			a2 = int(input())
-			if s2 > 50 * a2:
-				d2[a] = d2[a] + a2
-				print("Okey, now on the", streets[a], "you have", d2[a], "buildings\n")
-				s2 = s2 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+		if len(p2) != 0:
+			print("Do you want to biuld some houses on your streets?")
+			c2 = input()
+			if c2 == 'y':
+				print("On what streets you wan to build?")
+				a = int(input()) - 1
+				print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
+				a2 = int(input())
+				if s2 > 50 * a2:
+					d2[a] = d2[a] + a2
+					print("Okey, now on the", streets[a], "you have", d2[a], "buildings\n")
+					s2 = s2 - a * 50
+				else:
+					print("You haven't got some money for this operation\n")
 				
 
 	elif streets[k2] == 'Free Parking':
 		print("You are on the Free Parking")
 
 		print("You have:", p2, "and on this streets you have:", d2, "buildings")
-		print("Do you want to build some house on your streets?")
-		c2 = input()
-		if c2 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
-			a2 = int(input())
-			if s2 > 50 * a2:
-				d2[a] = d2[a] + a2
-				print("Okey, now on the", streets[a], "you have", d2[a], "buildings\n")
-				s2 = s2 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+		if len(p2) != 0:
+			print("Do you want to biuld some houses on your streets?")
+			c2 = input()
+			if c2 == 'y':
+				print("On what streets you wan to build?")
+				a = int(input()) - 1
+				print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
+				a2 = int(input())
+				if s2 > 50 * a2:
+					d2[a] = d2[a] + a2
+					print("Okey, now on the", streets[a], "you have", d2[a], "buildings\n")
+					s2 = s2 - a * 50
+				else:
+					print("You haven't got some money for this operation\n")
 
 
 	elif streets[k2] == 'Visiting Jail':
 		print("You are on the Jail, but only for visiting")
 
 		print("You have:", p2, "and on this streets you have:", d2, "buildings")
-		print("Do you want to build some house on your streets?")
-		c2 = input()
-		if c2 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
-			a2 = int(input())
-			if s2 > 50 * a2:
-				d2[a] = d2[a] + a2
-				print("Okey, now on the", streets[a], "you have", d2[a], "buildings\n")
-				s2 = s2 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+		if len(p2) != 0:
+			print("Do you want to biuld some houses on your streets?")
+			c2 = input()
+			if c2 == 'y':
+				print("On what streets you wan to build?")
+				a = int(input()) - 1
+				print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
+				a2 = int(input())
+				if s2 > 50 * a2:
+					d2[a] = d2[a] + a2
+					print("Okey, now on the", streets[a], "you have", d2[a], "buildings\n")
+					s2 = s2 - a * 50
+				else:
+					print("You haven't got some money for this operation\n")
 
 
 	elif streets[k2] == 'Go To Jail':
@@ -410,21 +436,20 @@ while s1 > 0 and s2 > 0:
 		s2 = s2 -100
 		k2 = 8
 		print("You budget is", s2, "\n")
-
 		print("You have:", p2, "and on this streets you have:", d2, "buildings")
-		print("Do you want to build some house on your streets?")
-		c2 = input()
-		if c2 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
-			a2 = int(input())
-			if s2 > 50 * a2:
-				d2[a] = d2[a] + a2
-				print("Okey, now on the", streets[a], "you have", d2[a], "buildings\n")
-				s2 = s2 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+
+
+	elif streets[k2] == 'Electric Company' and streets[k2] in p1 or streets[k2] == 'Water Warks' and streets[k2] in p1:
+		print("You are on the komercial company and you should throw cubes and pay for the first player 10x sum\n")
+		print("Throw cubes:(y)\n")
+		c4 = input()
+		if c4 == 'y':
+			c = rand(t)
+			print("The numbers on the cubes:", c, "\n")
+			print("You should pay", 10 * c, "for the first player\n")
+			s2 = s2 - 10 * c
+			s1 = s1 + 10 * c
+			print("You budget is", s2, "\n")
 
 
 	elif streets[k2] == 'Luxury Tax':
@@ -433,19 +458,20 @@ while s1 > 0 and s2 > 0:
 		print("You budget is", s2, "\n")
 
 		print("You have:", p2, "and on this streets you have:", d2, "buildings")
-		print("Do you want to build some house on your streets?")
-		c2 = input()
-		if c2 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
-			a2 = int(input())
-			if s2 > 50 * a2:
-				d2[a] = d2[a] + a2
-				print("Okey, now on the", streets[a], "you have", d2[a], "buildings\n")
-				s2 = s2 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+		if len(p2) != 0:
+			print("Do you want to biuld some houses on your streets?")
+			c2 = input()
+			if c2 == 'y':
+				print("On what streets you wan to build?")
+				a = int(input()) - 1
+				print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
+				a2 = int(input())
+				if s2 > 50 * a2:
+					d2[a] = d2[a] + a2
+					print("Okey, now on the", streets[a], "you have", d2[a], "buildings\n")
+					s2 = s2 - a * 50
+				else:
+					print("You haven't got some money for this operation\n")
 
 
 	elif streets[k2] in p1:
@@ -455,19 +481,20 @@ while s1 > 0 and s2 > 0:
 		print("You budget is", s2, "\n")
 
 		print("You have:", p2, "and on this streets you have:", d2, "buildings")
-		print("Do you want to build some house on your streets?")
-		c2 = input()
-		if c2 == 'y':
-			print("On what streets you wan to build?")
-			a = int(input()) - 1
-			print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
-			a2 = int(input())
-			if s2 > 50 * a2:
-				d2[a] = d2[a] + a2
-				print("Okey, now on the", streets[a], "you have", d2[a], "buildings\n")
-				s2 = s2 - a * 50
-			else:
-				print("You haven't got some money for this operation\n")
+		if len(p2) != 0:
+			print("Do you want to biuld some houses on your streets?")
+			c2 = input()
+			if c2 == 'y':
+				print("On what streets you wan to build?")
+				a = int(input()) - 1
+				print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
+				a2 = int(input())
+				if s2 > 50 * a2:
+					d2[a] = d2[a] + a2
+					print("Okey, now on the", streets[a], "you have", d2[a], "buildings\n")
+					s2 = s2 - a * 50
+				else:
+					print("You haven't got some money for this operation\n")
 
 
 
