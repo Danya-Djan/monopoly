@@ -99,7 +99,11 @@ while s1 > 0 and s2 > 0:
 			c1 = input()
 			if c1 == 'y':
 				print("On what streets you wan to build?")
-				a = int(input()) - 1
+				str_number = input()
+				while not str_number.isdigit():
+					print("Please, enter the digit")
+					str_number = input()
+				a = int(str_number) - 1
 				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
 				a1 = int(input())
 				if s1 > 50 * a1:
@@ -124,7 +128,11 @@ while s1 > 0 and s2 > 0:
 			c1 = input()
 			if c1 == 'y':
 				print("On what streets you wan to build?")
-				a = int(input()) - 1
+				str_number = input()
+				while not str_number.isdigit():
+					print("Please, enter the digit")
+					str_number = input()
+				a = int(str_number) - 1
 				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
 				a1 = int(input())
 				if s1 > 50 * a1:
@@ -147,7 +155,11 @@ while s1 > 0 and s2 > 0:
 			c1 = input()
 			if c1 == 'y':
 				print("On what streets you wan to build?")
-				a = int(input()) - 1
+				str_number = input()
+				while not str_number.isdigit():
+					print("Please, enter the digit")
+					str_number = input()
+				a = int(str_number) - 1
 				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
 				a1 = int(input())
 				if s1 > 50 * a1:
@@ -170,7 +182,11 @@ while s1 > 0 and s2 > 0:
 			c1 = input()
 			if c1 == 'y':
 				print("On what streets you wan to build?")
-				a = int(input()) - 1
+				str_number = input()
+				while not str_number.isdigit():
+					print("Please, enter the digit")
+					str_number = input()
+				a = int(str_number) - 1
 				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
 				a1 = int(input())
 				if s1 > 50 * a1:
@@ -213,7 +229,11 @@ while s1 > 0 and s2 > 0:
 			c1 = input()
 			if c1 == 'y':
 				print("On what streets you wan to build?")
-				a = int(input()) - 1
+				str_number = input()
+				while not str_number.isdigit():
+					print("Please, enter the digit")
+					str_number = input()
+				a = int(str_number) - 1
 				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
 				a1 = int(input())
 				if s1 > 50 * a1:
@@ -241,7 +261,11 @@ while s1 > 0 and s2 > 0:
 			c1 = input()
 			if c1 == 'y':
 				print("On what streets you wan to build?")
-				a = int(input()) - 1
+				str_number = input()
+				while not str_number.isdigit():
+					print("Please, enter the digit")
+					str_number = input()
+				a = int(str_number) - 1
 				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
 				a1 = int(input())
 				if s1 > 50 * a1:
@@ -267,7 +291,11 @@ while s1 > 0 and s2 > 0:
 			c1 = input()
 			if c1 == 'y':
 				print("On what streets you wan to build?")
-				a = int(input()) - 1
+				str_number = input()
+				while not str_number.isdigit():
+					print("Please, enter the digit")
+					str_number = input()
+				a = int(str_number) - 1
 				print("Okey, and how buildings do you want to build?(price for one house - 50 and you have", s1, ")")
 				a1 = int(input())
 				if s1 > 50 * a1:
@@ -357,7 +385,11 @@ while s1 > 0 and s2 > 0:
 			c2 = input()
 			if c2 == 'y':
 				print("On what streets you wan to build?")
-				a = int(input()) - 1
+				str_number = input()
+				while not str_number.isdigit():
+					print("Please, enter the digit")
+					str_number = input()
+				a = int(str_number) - 1
 				print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
 				a2 = int(input())
 				if s2 > 50 * a2:
@@ -380,7 +412,11 @@ while s1 > 0 and s2 > 0:
 			c2 = input()
 			if c2 == 'y':
 				print("On what streets you wan to build?")
-				a = int(input()) - 1
+				str_number = input()
+				while not str_number.isdigit():
+					print("Please, enter the digit")
+					str_number = input()
+				a = int(str_number) - 1
 				print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
 				a2 = int(input())
 				if s2 > 50 * a2:
@@ -400,7 +436,11 @@ while s1 > 0 and s2 > 0:
 			c2 = input()
 			if c2 == 'y':
 				print("On what streets you wan to build?")
-				a = int(input()) - 1
+				str_number = input()
+				while not str_number.isdigit():
+					print("Please, enter the digit")
+					str_number = input()
+				a = int(str_number) - 1
 				print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
 				a2 = int(input())
 				if s2 > 50 * a2:
@@ -420,7 +460,11 @@ while s1 > 0 and s2 > 0:
 			c2 = input()
 			if c2 == 'y':
 				print("On what streets you wan to build?")
-				a = int(input()) - 1
+				str_number = input()
+				while not str_number.isdigit():
+					print("Please, enter the digit")
+					str_number = input()
+				a = int(str_number) - 1
 				print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
 				a2 = int(input())
 				if s2 > 50 * a2:
@@ -463,7 +507,11 @@ while s1 > 0 and s2 > 0:
 			c2 = input()
 			if c2 == 'y':
 				print("On what streets you wan to build?")
-				a = int(input()) - 1
+				str_number = input()
+				while not str_number.isdigit():
+					print("Please, enter the digit")
+					str_number = input()
+				a = int(str_number) - 1
 				print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
 				a2 = int(input())
 				if s2 > 50 * a2:
@@ -486,7 +534,11 @@ while s1 > 0 and s2 > 0:
 			c2 = input()
 			if c2 == 'y':
 				print("On what streets you wan to build?")
-				a = int(input()) - 1
+				str_number = input()
+				while not str_number.isdigit():
+					print("Please, enter the digit")
+					str_number = input()
+				a = int(str_number) - 1
 				print("Okey, and how many buildings do you want to build?(price for one house - 50 and you have", s2, ")")
 				a2 = int(input())
 				if s2 > 50 * a2:
